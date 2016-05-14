@@ -312,7 +312,7 @@ namespace gr {
        *
        * \param gain            overall gain of filter (typically 1.0)
        * \param sampling_freq   sampling freq (Hz)
-       * \param symbol_rate     symbol rate, must be a factor of sample rate
+       * \param symbol_rate     samples per symbol (sample rate/symbol rate)
        * \param alpha           excess bandwidth factor
        * \param ntaps           number of taps
        */
@@ -327,7 +327,7 @@ namespace gr {
        * \brief design a Gaussian filter
        *
        * \param gain    overall gain of filter (typically 1.0)
-       * \param spb     symbol rate, must be a factor of sample rate
+       * \param spb     samples per symbol (sample rate/symbol rate)
        * \param bt      bandwidth to bitrate ratio
        * \param ntaps   number of taps
        */
